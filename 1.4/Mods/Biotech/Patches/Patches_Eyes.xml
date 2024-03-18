@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- ==================== All Eyes ==================== -->
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/iconPath</xpath>
+		<value>
+			<iconPath>UI/Icons/Genes/Gene_Eyes</iconPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData/drawScale</xpath>
+		<value>
+			<drawScale>1.0</drawScale>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData/graphicPath</xpath>
+		<value>
+			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Male</graphicPath>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData/graphicPathFemale</xpath>
+		<value>
+			<graphicPathFemale>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Female</graphicPathFemale>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData</xpath>
+		<value>
+			<drawOnEyes>false</drawOnEyes>
+		</value>
+	</Operation>
+
+	<!-- ==================== Red Eyes ==================== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red"]</xpath>
+		<value>
+			<iconColor>(173, 37, 37)</iconColor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red"]/graphicData</xpath>
+		<value>
+			<color>(173, 37, 37)</color>
+		</value>
+	</Operation>
+
+	<!-- ==================== Gray Eyes ==================== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="Eyes_Gray"]</xpath>
+		<value>
+			<iconColor>(124, 124, 124)</iconColor>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/GeneDef[defName="Eyes_Gray"]/graphicData</xpath>
+		<value>
+			<color>(124, 124, 124)</color>
+		</value>
+	</Operation>
+
+</Patch>
