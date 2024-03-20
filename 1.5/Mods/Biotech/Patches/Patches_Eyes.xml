@@ -10,34 +10,6 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData/drawScale</xpath>
-		<value>
-			<drawScale>1.0</drawScale>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData/graphicPath</xpath>
-		<value>
-			<graphicPath>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Male</graphicPath>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationReplace">
-		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData/graphicPathFemale</xpath>
-		<value>
-			<graphicPathFemale>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Female</graphicPathFemale>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/GeneDef[defName="Eyes_Red" or defName="Eyes_Gray"]/graphicData</xpath>
-		<value>
-			<drawOnEyes>false</drawOnEyes>
-		</value>
-	</Operation>
-
 	<!-- ==================== Red Eyes ==================== -->
 
 	<Operation Class="PatchOperationAdd">
@@ -47,10 +19,25 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/GeneDef[defName="Eyes_Red"]/graphicData</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[defName="Eyes_Red"]/renderNodeProperties</xpath>
 		<value>
-			<color>(173, 37, 37)</color>
+			<renderNodeProperties>
+				<li Class="PawnRenderNodeProperties_Eye">
+					<texPath>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Male</texPath>
+					<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Female</texPathFemale>
+					<rotDrawMode>Fresh, Rotting</rotDrawMode>
+					<parentTagDef>Head</parentTagDef>
+					<drawSize>1.0</drawSize>
+					<drawData>
+						<defaultData>
+							<layer>54</layer>
+							<offset>(0, 0, 0)</offset>
+						</defaultData>
+					</drawData>
+					<color>(173, 37, 37)</color>
+				</li>
+			</renderNodeProperties>
 		</value>
 	</Operation>
 
@@ -63,10 +50,25 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/GeneDef[defName="Eyes_Gray"]/graphicData</xpath>
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/GeneDef[defName="Eyes_Gray"]/renderNodeProperties</xpath>
 		<value>
-			<color>(124, 124, 124)</color>
+			<renderNodeProperties>
+				<li Class="PawnRenderNodeProperties_Eye">
+					<texPath>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Male</texPath>
+					<texPathFemale>Things/Pawn/Humanlike/HeadAttachments/RecolourableEyes/Eyes_Female</texPathFemale>
+					<rotDrawMode>Fresh, Rotting</rotDrawMode>
+					<parentTagDef>Head</parentTagDef>
+					<drawSize>1.0</drawSize>
+					<drawData>
+						<defaultData>
+							<layer>54</layer>
+							<offset>(0, 0, 0)</offset>
+						</defaultData>
+					</drawData>
+					<color>(124, 124, 124)</color>
+				</li>
+			</renderNodeProperties>
 		</value>
 	</Operation>
 
