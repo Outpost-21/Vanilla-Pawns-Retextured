@@ -36,6 +36,7 @@
 						</defaultData>
 					</drawData>
 					<color>(173, 37, 37)</color>
+					<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
 				</li>
 			</renderNodeProperties>
 		</value>
@@ -67,6 +68,7 @@
 						</defaultData>
 					</drawData>
 					<color>(124, 124, 124)</color>
+					<narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
 				</li>
 			</renderNodeProperties>
 		</value>
